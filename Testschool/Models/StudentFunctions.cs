@@ -110,7 +110,7 @@ namespace Testschool.Models
                     return;
                 }
 
-                // Create a new student instance and set its properties
+                
                 var newStudent = new Student
                 {
                     FirstName = firstName,
@@ -118,9 +118,9 @@ namespace Testschool.Models
                     ClassId = classId
                 };
 
-                // Add the new student to the Students DbSet
+                
                 context.Students.Add(newStudent);
-                // Save changes to the database
+                
                 context.SaveChanges();
 
                 Console.WriteLine($"New student {newStudent.FirstName} {newStudent.LastName} added successfully!");
